@@ -4,14 +4,7 @@
 
     <data>
         <!-- Instead of accessing the variables directly,
-                           call the viewmodel properties -->
-
-        <!--        <variable name="name"-->
-        <!--            type="String"/>-->
-
-        <!--        <variable name="lastName"-->
-        <!--            type="String"/>-->
-
+                           call the viewModel properties -->
         <variable
             name="viewModel"
             type="com.odom.databindingexample.MainViewModel" />
@@ -53,7 +46,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="24dp"
-            android:contentDescription="Profile\'s avatar"
             app:popularityIcon="@{viewModel.popularity}"
             android:minWidth="48dp"
             android:minHeight="48dp"
