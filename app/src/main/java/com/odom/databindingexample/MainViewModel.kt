@@ -16,7 +16,7 @@ class MainViewModel : ViewModel() {
     val likes : LiveData<Int> = _likes
 
     fun onLike(){
-        _likes.value = (_likes.value ?:0) +1
+        _likes.value = _likes.value?.inc() //(_likes.value ?:0) +1
     }
 
     val popularity : LiveData<Popularity> = Transformations.map(_likes){
